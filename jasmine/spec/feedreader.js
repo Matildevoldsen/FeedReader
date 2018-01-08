@@ -9,6 +9,9 @@
  * to ensure they don't run until the DOM is ready.
  */
 $(function () {
+    /*
+    Checks if URLs is not empty && Name
+     */
     describe('RSS Feeds', function () {
 
         it('are defined', function () {
@@ -31,6 +34,9 @@ $(function () {
         });
     });
 
+    /*
+    Checks if menubar is clickable & hidden when page has loaded.
+     */
     describe('The menu', function () {
         it('Menubar is hidden', function () {
             expect($('body').hasClass('menu-hidden')).toBe(true);
@@ -44,6 +50,9 @@ $(function () {
         });
     });
 
+    /*
+    Check if the feed content has loaded
+     */
     describe("Initial Entries", function () {
 
         beforeEach(function (done) {
@@ -57,6 +66,9 @@ $(function () {
         });
     });
 
+    /*
+    Check if the new feed content loads or not.
+     */
     describe('New Feed Selection', function () {
         var initFeed = $('.feed').html();
 
