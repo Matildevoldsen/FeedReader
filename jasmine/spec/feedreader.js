@@ -20,16 +20,16 @@ $(function () {
         });
 
         it('doesn\'t have empty URL', function () {
-            for (x in allFeeds) {
-                expect(allFeeds[x]).toBeDefined();
-                expect(allFeeds[x].url.length).not.toEqual(0);
+            for (feed in allFeeds) {
+                expect(allFeeds[feed]).toBeDefined();
+                expect(allFeeds[feed].url.length).not.toEqual(0);
             }
         });
 
         it('doesn\'t have an empty name', function () {
-            for (x in allFeeds) {
-                expect(allFeeds[x]).toBeDefined();
-                expect(allFeeds[x].url.length).not.toEqual(0);
+            for (allFeed in allFeeds) {
+                expect(allFeeds[allFeed]).toBeDefined();
+                expect(allFeeds[allFeed].url.length).not.toEqual(0);
             }
         });
     });
@@ -58,7 +58,7 @@ $(function () {
         beforeEach(function (done) {
             loadFeed(0, function () {
                 done();
-            })
+            });
         });
 
         it('Feed is loaded', function () {
@@ -78,7 +78,7 @@ $(function () {
                     done();
                 });
             });
-        })
+        });
 
         it('Feed content has changed', function () {
             var newFeed = $('.feed').html();
