@@ -1,11 +1,13 @@
 # FeedReader Testing
 
-This game is a part of my nano-degree from Udacity
+This game is a part of my nano-degree from Udacity.
+
+The Feedreader contains a menubar with dynamic loading links to a new feed. Beside that there's a list of articles, tutorials, and blog posts.
 
 This project tests everything from if the menu bar is clickable to the content has loaded. 
 
 ## Test
-This project tests all of these functions: 
+This project tests all of these functions:
 ### RSS Feed
 - URL is not empty.
 - URL is defined.
@@ -24,3 +26,6 @@ This project tests all of these functions:
 ## Installation
 
 To install this project please download all files from the repo.
+
+### Jasmine
+This project uses [Jasmine](https://jasmine.github.io) to tests it's functionality.
