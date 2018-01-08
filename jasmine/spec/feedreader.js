@@ -20,14 +20,14 @@ $(function () {
         });
 
         it('doesn\'t have empty URL', function () {
-            for (feed in allFeeds) {
+            for (var feed in allFeeds) {
                 expect(allFeeds[feed]).toBeDefined();
                 expect(allFeeds[feed].url.length).not.toEqual(0);
             }
         });
 
         it('doesn\'t have an empty name', function () {
-            for (allFeed in allFeeds) {
+            for (var allFeed in allFeeds) {
                 expect(allFeeds[allFeed]).toBeDefined();
                 expect(allFeeds[allFeed].url.length).not.toEqual(0);
             }
