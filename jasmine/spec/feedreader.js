@@ -21,15 +21,13 @@ $(function () {
 
         it('doesn\'t have empty URL', function () {
             allFeeds.forEach(function (feed) {
-                expect(feed.url).toBeDefined();
-                expect(feed.url.length).not.toEqual(0);
+                expect(feed.url).toBeTruthy();
             });
         });
 
         it('doesn\'t have an empty name', function () {
             allFeeds.forEach(function (feed) {
-                expect(feed.name).toBeDefined();
-                expect(feed.name.length).not.toEqual(0);
+                expect(feed.url).toBeTruthy();
             });
         });
     });
