@@ -20,17 +20,17 @@ $(function () {
         });
 
         it('doesn\'t have empty URL', function () {
-            for (var feed in allFeeds) {
-                expect(allFeeds[feed]).toBeDefined();
-                expect(allFeeds[feed].url.length).not.toEqual(0);
-            }
+            allFeeds.forEach(function (feed) {
+                expect(feed.url).toBeDefined();
+                expect(feed.url.length).not.toEqual(0);
+            });
         });
 
         it('doesn\'t have an empty name', function () {
-            for (var allFeed in allFeeds) {
-                expect(allFeeds[allFeed]).toBeDefined();
-                expect(allFeeds[allFeed].url.length).not.toEqual(0);
-            }
+            allFeeds.forEach(function (feed) {
+                expect(feed.name).toBeDefined();
+                expect(feed.name.length).not.toEqual(0);
+            });
         });
     });
 
