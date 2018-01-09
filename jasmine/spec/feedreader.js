@@ -62,7 +62,7 @@ $(function () {
         });
 
         it('Feed is loaded', function () {
-            expect($('.entry').length).not.toEqual(0);
+            expect($('.feed .entry').length).not.toEqual(0);
         });
     });
 
@@ -70,9 +70,11 @@ $(function () {
     Check if the new feed content loads or not.
      */
     describe('New Feed Selection', function () {
-        var initFeed = $('.feed').html();
-
+        var initFeed,
+            newFeed;
         beforeEach(function (done) {
+            initFeed = $('.feed').html();
+
             loadFeed(0, function () {
                 loadFeed(1, function () {
                     done();
@@ -81,7 +83,7 @@ $(function () {
         });
 
         it('Feed content has changed', function () {
-            var newFeed = $('.feed').html();
+            newFeed = $('.feed').html();
             expect(newFeed).not.toEqual(initFeed);
         });
     });
