@@ -27,5 +27,7 @@ This project tests all of these functions:
 
 To install this project please download all files from the repo.
 
+To open the app right click on the HTML file and open with preferred browser, or drag the file into the search field in the browser.
+
 ### Jasmine
 This project uses [Jasmine](https://jasmine.github.io) to tests it's functionality.
