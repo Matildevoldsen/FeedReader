@@ -1,6 +1,6 @@
 # FeedReader Testing
 
-This game is a part of my nano-degree from Udacity.
+This project is a part of my nano-degree from Udacity.
 
 The Feedreader contains a menubar with dynamic loading links to a new feed. Beside that there's a list of articles, tutorials, and blog posts.
 
